@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>المشروع النهائي للتقنية - لين كمال</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media screen and (max-width: 800px) {
+      body {
+        background-color: lightblue;
+      }
+    }
+
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 2px solid #000;
+      padding: 20px;
+    }
+
+    .buttons {
+      margin-bottom: 20px;
+    }
+
+    .buttons button {
+      margin: 5px;
+      padding: 10px 20px;
+    }
+
+    #output {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 18px;
+      color: darkblue;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>النجاح</h1>
+  <p>النجاح هو عدم تكرار الأخطاء. النجاح هو محصلة من الاجتهادات الصغيرة تتراكم يوماً بعد يوم.</p>
+
+  <div class="buttons">
+    <button onclick="printDateTime()">طباعة التاريخ والوقت</button>
+    <button onclick="showAlert()">عرض رسالة</button>
+    <button onclick="showName()">طباعة الاسم</button>
+  </div>
+
+  <div id="output"></div>
+
+  <table>
+    <tr>
+      <th>الاسم</th>
+      <th>الهواية</th>
+    </tr>
+    <tr>
+      <td>لين بكر كمال</td>
+      <td>الرسم</td>
+    </tr>
+    <tr>
+      <td>لينو</td>
+      <td>انتصار البوشال</td>
+    </tr>
+  </table>
+
+  <script>
+    function printDateTime() {
+      document.getElementById("output").innerText = new Date();
+    }
+
+    function showAlert() {
+      alert("سبحان الله وبحمده");
+    }
+
+    function showName() {
+      document.getElementById("output").innerText = "لين كمال";
+    }
+  </script>
+</body>
+</html>
